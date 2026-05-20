@@ -15,9 +15,9 @@
     { "src": "/api/v1/ethanol/optimize",         "dest": "/api/handlers.py" },
     { "src": "/api/v1/ethanol/analyze",          "dest": "/api/analyze.py" }
   ],
-  "crons": [
-    { "path": "/api/cron/scrape", "schedule": "0 */6 * * *" }
-  ],
+"crons": [
+  { "path": "/api/cron/scrape", "schedule": "0 2 * * *" }
+],
   "env": {
     "SUPABASE_URL": "@supabase-url",
     "SUPABASE_SERVICE_KEY": "@supabase-service-key",
