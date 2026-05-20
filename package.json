@@ -1,0 +1,22 @@
+{
+  "name": "india-ethanol-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Indian ethanol market — EBP prices, blending data, sugar vs ethanol optimizer",
+  "type": "module",
+  "bin": {
+    "india-ethanol-mcp": "src/mcp_server.js"
+  },
+  "scripts": {
+    "start": "node src/mcp_server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "keywords": ["mcp", "india", "ethanol", "ebp", "biofuel", "sugar-mill", "blending"],
+  "author": "GridIntel India <opensource@gridintelin.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gridintelin/india-ethanol-mcp"
+  }
+}

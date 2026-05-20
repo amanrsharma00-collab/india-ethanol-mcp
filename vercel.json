@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "functions": {
+    "api/mcp.js": { "runtime": "nodejs20.x" },
+    "api/handlers.py": { "runtime": "python3.11" },
+    "api/analyze.py": { "runtime": "python3.11" }
+  },
+  "routes": [
+    { "src": "/api/mcp",                        "dest": "/api/mcp.js" },
+    { "src": "/api/v1/ethanol/prices",           "dest": "/api/handlers.py" },
+    { "src": "/api/v1/ethanol/blending",         "dest": "/api/handlers.py" },
+    { "src": "/api/v1/ethanol/tenders",          "dest": "/api/handlers.py" },
+    { "src": "/api/v1/ethanol/depots",           "dest": "/api/handlers.py" },
+    { "src": "/api/v1/ethanol/notifications",    "dest": "/api/handlers.py" },
+    { "src": "/api/v1/ethanol/optimize",         "dest": "/api/handlers.py" },
+    { "src": "/api/v1/ethanol/analyze",          "dest": "/api/analyze.py" }
+  ],
+  "crons": [
+    { "path": "/api/cron/scrape", "schedule": "0 */6 * * *" }
+  ],
+  "env": {
+    "SUPABASE_URL": "@supabase-url",
+    "SUPABASE_SERVICE_KEY": "@supabase-service-key",
+    "LLM_ENDPOINT": "@llm-endpoint",
+    "LLM_API_KEY": "@llm-api-key",
+    "LLM_MODEL": "@llm-model",
+    "GRIDINTELIN_API_KEY": "@gridintelin-api-key",
+    "GRIDINTELIN_API_URL": "@gridintelin-api-url"
+  }
+}
