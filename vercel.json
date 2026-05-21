@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "routes": [
-    { "src": "/api/mcp",                      "dest": "/api/mcp.js" },
-    { "src": "/api/v1/ethanol/(.*)",           "dest": "/api/index.py" }
+  "rewrites": [
+    { "source": "/api/v1/ethanol/:path*", "destination": "/api/index.py" },
+    { "source": "/api/mcp", "destination": "/api/mcp.js" }
   ]
 }
