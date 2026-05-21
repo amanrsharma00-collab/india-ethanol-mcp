@@ -1,13 +1,23 @@
 {
   "version": 2,
-  "functions": {
-    "api/prices.py": { "runtime": "python3.9" },
-    "api/blending.py": { "runtime": "python3.9" },
-    "api/tenders.py": { "runtime": "python3.9" },
-    "api/depots.py": { "runtime": "python3.9" },
-    "api/notifications.py": { "runtime": "python3.9" },
-    "api/optimize.py": { "runtime": "python3.9" },
-    "api/analyze.py": { "runtime": "python3.9" },
-    "api/mcp.js": { "runtime": "nodejs20.x" }
-  }
+  "builds": [
+    { "src": "api/prices.py", "use": "@vercel/python" },
+    { "src": "api/blending.py", "use": "@vercel/python" },
+    { "src": "api/tenders.py", "use": "@vercel/python" },
+    { "src": "api/depots.py", "use": "@vercel/python" },
+    { "src": "api/notifications.py", "use": "@vercel/python" },
+    { "src": "api/optimize.py", "use": "@vercel/python" },
+    { "src": "api/analyze.py", "use": "@vercel/python" },
+    { "src": "api/mcp.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/prices", "dest": "api/prices.py" },
+    { "src": "/api/blending", "dest": "api/blending.py" },
+    { "src": "/api/tenders", "dest": "api/tenders.py" },
+    { "src": "/api/depots", "dest": "api/depots.py" },
+    { "src": "/api/notifications", "dest": "api/notifications.py" },
+    { "src": "/api/optimize", "dest": "api/optimize.py" },
+    { "src": "/api/analyze", "dest": "api/analyze.py" },
+    { "src": "/api/mcp", "dest": "api/mcp.js" }
+  ]
 }
