@@ -15,4 +15,3 @@
     { "src": "/api/v1/ethanol/optimize",         "dest": "/api/handlers.py" },
     { "src": "/api/v1/ethanol/analyze",          "dest": "/api/analyze.py" }
   ],
-}
