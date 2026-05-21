@@ -2,8 +2,8 @@
   "version": 2,
   "functions": {
     "api/mcp.js": { "runtime": "nodejs20.x" },
-    "api/handlers.py": { "runtime": "python3.11" },
-    "api/analyze.py": { "runtime": "python3.11" }
+    "api/handlers.py": { "runtime": "python3.9" },
+    "api/analyze.py": { "runtime": "python3.9" }
   },
   "routes": [
     { "src": "/api/mcp",                      "dest": "/api/mcp.js" },
