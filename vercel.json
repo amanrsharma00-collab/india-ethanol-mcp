@@ -6,12 +6,13 @@
     "api/analyze.py": { "runtime": "python3.11" }
   },
   "routes": [
-    { "src": "/api/mcp",                        "dest": "/api/mcp.js" },
-    { "src": "/api/v1/ethanol/prices",           "dest": "/api/handlers.py" },
-    { "src": "/api/v1/ethanol/blending",         "dest": "/api/handlers.py" },
-    { "src": "/api/v1/ethanol/tenders",          "dest": "/api/handlers.py" },
-    { "src": "/api/v1/ethanol/depots",           "dest": "/api/handlers.py" },
-    { "src": "/api/v1/ethanol/notifications",    "dest": "/api/handlers.py" },
-    { "src": "/api/v1/ethanol/optimize",         "dest": "/api/handlers.py" },
-    { "src": "/api/v1/ethanol/analyze",          "dest": "/api/analyze.py" }
-  ],
+    { "src": "/api/mcp",                      "dest": "/api/mcp.js" },
+    { "src": "/api/v1/ethanol/prices",         "dest": "/api/handlers.py" },
+    { "src": "/api/v1/ethanol/blending",       "dest": "/api/handlers.py" },
+    { "src": "/api/v1/ethanol/tenders",        "dest": "/api/handlers.py" },
+    { "src": "/api/v1/ethanol/depots",         "dest": "/api/handlers.py" },
+    { "src": "/api/v1/ethanol/notifications",  "dest": "/api/handlers.py" },
+    { "src": "/api/v1/ethanol/optimize",       "dest": "/api/handlers.py" },
+    { "src": "/api/v1/ethanol/analyze",        "dest": "/api/analyze.py" }
+  ]
+}
