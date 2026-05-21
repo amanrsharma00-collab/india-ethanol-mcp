@@ -15,16 +15,4 @@
     { "src": "/api/v1/ethanol/optimize",         "dest": "/api/handlers.py" },
     { "src": "/api/v1/ethanol/analyze",          "dest": "/api/analyze.py" }
   ],
-"crons": [
-  { "path": "/api/cron/scrape", "schedule": "0 2 * * *" }
-],
-  "env": {
-    "SUPABASE_URL": "https://huqufqoquyahlxybrrqe.supabase.co",
-    "SUPABASE_SERVICE_KEY": "sb_publishable_QaWmp4cN2gPUrhXszczloA_b50i5wzZ",
-    "LLM_ENDPOINT": "@llm-endpoint",
-    "LLM_API_KEY": "@llm-api-key",
-    "LLM_MODEL": "@llm-model",
-    "GRIDINTELIN_API_KEY": "@gridintelin-api-key",
-    "GRIDINTELIN_API_URL": "@gridintelin-api-url"
-  }
 }
